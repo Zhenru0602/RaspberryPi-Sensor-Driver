@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-
+# need to be specified based on rasp pin connection
 SPICLK = 2  #mq2 orange
 SPIMISO = 3 #mq2 brown
 SPIMOSI = 4 #mq2 purple
@@ -9,6 +9,8 @@ SPICS = 14 #mq2 blue
 mq2_dpin = 15 #mq2 green
 mq2_apin = 0
 
+# This class to handle the data collection for smoke sensor
+# read value is float
 class SmokeSensor:
     def __init__(self):
         #GPIO.setwarnings(False)

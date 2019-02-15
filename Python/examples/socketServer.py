@@ -59,7 +59,7 @@ while 1:
 
         #function to create json string contains all data, can be customized
         jsonString = '{"temperature":'+str(temperature)+', "humidity":'+str(humidity)+',"smoke":'+str(smoke)+', "motion":'+str(motion)+', "water_level":'+str(water_level)+'}'
-        conn.send(jsonString)
+        conn.send(jsonString.encode())
         time.sleep(2)
     except socket.error:
         conn.close()

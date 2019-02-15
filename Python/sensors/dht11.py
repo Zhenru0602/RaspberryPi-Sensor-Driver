@@ -1,6 +1,9 @@
 import time
 import RPi
 
+#
+# Helper function for temp-humidity sensor
+#
 
 class DHT11Result:
     'DHT11 sensor result returned by DHT11.read() method'
